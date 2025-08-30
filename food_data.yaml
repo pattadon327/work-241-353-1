@@ -1,0 +1,38 @@
+# Food Dataset Configuration for Instance Segmentation
+# Optimized paths for YOLOv5 training
+
+# Dataset info
+dataset_name: food_instance_segmentation
+description: Food dataset with bounding boxes and segmentation masks for instance segmentation
+
+# Paths (absolute paths)
+path: D:/241-353/dataset_new  # dataset root dir
+train: images/train  # train images (relative to 'path') 
+val: images/val      # val images (relative to 'path')
+test: images/test    # test images (relative to 'path')
+
+# Labels paths
+train_labels: labels/train     # train bounding box labels
+val_labels: labels/val         # val bounding box labels
+test_labels: labels/test       # test bounding box labels
+train_segments: segment/train  # train segmentation masks
+val_segments: segment/val      # val segmentation masks
+test_segments: segment/test    # test segmentation masks
+
+# Number of classes
+nc: 9
+
+# Class names (matching your existing labels)
+names:
+  0: protein
+  1: carbohydrate  
+  2: fruit
+  3: dessert
+  4: flatware
+  5: vegetable
+  6: sauce
+  7: soup
+  8: snack
+
+# Download script/URL (optional)
+# download: https://github.com/ultralytics/yolov5/releases/download/v1.0/coco128-seg.zip
